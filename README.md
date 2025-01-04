@@ -25,10 +25,20 @@ NCF Architecture
 ## **MovieLens Dashboard**
 
 ### **MovieLens Dataset Analysis**
-![MovieLens Dataset Analysis](images/movielens_analysis.png)
+<p align="center">
+<img src="images/movielens_analysis.png" alt="drawing" width="50%"/>
+</p>
+<p align="center">
+MovieLens Dataset Analysis
+</p>
 
 ### **Movie Recommendation System**
-![Movie Recommendation System](images/recommendation_system.png)
+<p align="center">
+<img src="images/recommendation_system.png" alt="drawing" width="50%"/>
+</p>
+<p align="center">
+Movie Recommendation System
+</p>
 
 ---
 
