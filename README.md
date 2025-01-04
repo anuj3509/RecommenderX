@@ -13,7 +13,12 @@ Neural Collaborative Filtering (NCF) is a deep learning-based approach used for 
 
 NCF is particularly powerful in capturing hidden patterns in user preferences and item characteristics, making it ideal for personalized movie recommendations. The architecture is scalable, adaptable to large datasets, and has been shown to outperform traditional methods in many cases.
 
-![NCF Architecture](NCF.png)
+<p align="center">
+<img src="NCF" alt="drawing" width="80%"/>
+</p>
+<p align="center">
+NCF Architecture
+</p>
 
 ---
 
