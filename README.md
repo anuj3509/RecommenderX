@@ -1,18 +1,32 @@
 # **Big Data Project: Movie Recommendation System**
 
-This project implements a movie recommendation system using a self-trained NCF deep learning model and a user-friendly Streamlit dashboard. The system utilizes SQL databases to store movie data, user ratings, and recommendations obtained trained NCF deep learning model for efficient querying.
-Training of deep learning model is made scalable by utilising apache spark framework.
+This project implements a movie recommendation system utilizing a custom-trained Neural Collaborative Filtering (NCF) deep learning model and a user-friendly Streamlit dashboard. It leverages SQL databases to store movie data, user ratings, and recommendations, with the NCF model used for efficient recommendation generation. To enhance scalability, Apache Spark is employed for training the deep learning model across large datasets.
 
 ---
-## MovieLens Dashboard
 
-### MovieLens Dataset Analysis
+## **Overview: Neural Collaborative Filtering (NCF)**
+
+Neural Collaborative Filtering (NCF) is a deep learning-based approach used for building recommendation systems. Unlike traditional collaborative filtering methods (e.g., matrix factorization), NCF captures non-linear user-item interactions using neural networks. The model is composed of two primary components:
+
+1. **Embedding Layers**: These map users and items (e.g., movies) into low-dimensional vectors.
+2. **Neural Network Layers**: These learn complex interactions between the user and item embeddings, producing a final prediction score indicating user preferences for an item.
+
+NCF is particularly powerful in capturing hidden patterns in user preferences and item characteristics, making it ideal for personalized movie recommendations. The architecture is scalable, adaptable to large datasets, and has been shown to outperform traditional methods in many cases.
+
+![NCF Architecture](NCF.png)
+
+---
+
+## **MovieLens Dashboard**
+
+### **MovieLens Dataset Analysis**
 ![MovieLens Dataset Analysis](images/movielens_analysis.png)
 
-### Movie Recommendation System
+### **Movie Recommendation System**
 ![Movie Recommendation System](images/recommendation_system.png)
 
 ---
+
 ## **Technologies and Libraries Used**
 
 The project utilizes the following technologies and libraries:
@@ -76,23 +90,27 @@ These technologies and libraries work together to create a robust and scalable r
 git clone https://github.com/HARSHALK2598/BigDataProject.git
 cd BigDataProject
 ```
+
 ### **2. Install Dependencies**
 Ensure you have Python 3.8+ installed. Then, use the `requirements.txt` file to install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
+
 ### **3. Create SQL Views**
 Run the `create_views.py` script to create views that optimize dashboard queries:
 
 ```bash
 python create_views.py
 ```
+
 ### **4. Precompute Recommendations**
 Run the `precompute_recommendations.py` script to generate and store the top 10 recommendations for all users in the database:
 ```bash
 python precompute_recommendations.py
 ```
+
 ---
 
 ## **5. Run the Streamlit Dashboard**
@@ -100,6 +118,7 @@ Launch the dashboard to explore movie recommendations and data analysis:
 ```bash
 streamlit run movie_dashboard_v3.py
 ```
+
 ---
 
 ## **Features**
@@ -124,4 +143,5 @@ streamlit run movie_dashboard_v3.py
 ## **License**
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
+---
 
