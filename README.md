@@ -1,4 +1,4 @@
-# **Movie Recommendation System with Neural Collaborative Filtering**
+# **Movie Recommendation System with NCF**
 
 This project implements a movie recommendation system utilizing a custom-trained Neural Collaborative Filtering (NCF) deep learning model and a user-friendly Streamlit dashboard. It leverages SQL databases to store movie data, user ratings, and recommendations, with the NCF model used for efficient recommendation generation. To enhance scalability, Apache Spark is employed for training the deep learning model across large datasets.
 
